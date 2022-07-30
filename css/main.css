@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Inter:wght@200;300;400;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Fredoka one', cursive;
+    font-family: 'Inter', sans-serif;
+    /* background-image: url(../images/body_bg.jpg); */
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+}
+/*Hero section*/
+.hero_section {
+    position: relative;
+    padding: 120px 0;
+    overflow: hidden;
+}
+
+.hero_section h1 {
+    font-family: 'Fredoka one', cursive;
+    font-size: 72px; 
+    font-weight: bold; 
+}
+
+.hero_section h5 {
+    text-align: right;
+    color: rgb(255, 255, 255, 0.6);
+    text-transform: uppercase;
+    font-size: 19px;
+    padding-top: 10px;
+}
+
+.hero_section h5::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: 0;
+    width: 1085px;
+    height: 1px;
+    background-color: rgba(251, 146, 108, 0.39);
+}
+
+.round {
+    position: absolute;
+    top: 64px;
+    left: -100px;
+    width: 200px;
+}
+/*End of Hero section*/
+/*Covid section*/
+.covid_section {
+    padding-top: 30px;
+    padding-bottom: 100px;
+}
+
+.covid_section-p {
+    font-size: 24px;
+}
+
+.covid_section-p .covid {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 36px;
+    color: #FC72A4;
+}
+
+.covid_section-statistics {
+    padding-top: 80px;
+
+}
+
+.covid_section-statistics h3 {
+    text-align: right;
+    padding-right: 140px;
+    padding-bottom: 30px;
+    font-weight: 300;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    opacity: 0.6;
+}
+
+.graphs {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.graphs > div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.graphs > div h6 {
+    color: white;
+    opacity: 0.6;
+}
+
+.bar {
+    margin-left: 10px;
+    font-size: 23px;
+    font-weight: 100;
+}
+
+.bar_chart-1 {
+    padding: 7px 15px 7px 80px;
+    background-color: #6EB793;
+}
+
+.bar_chart-2 {
+    padding: 7px 15px 7px 150px;
+    background-color: #538d70;
+}
+/*End of Covid section*/
+/*About_Machinelearning*/
+.machineLearning_heder-1 {
+    font-weight: 900;
+    font-size: 36px;
+    text-transform: uppercase;
+    backdrop-filter: blur(200px);
+}
+
+.machineLearning_text-1 {
+    font-weight: 100;
+    font-size: 25px;
+    text-transform: uppercase;
+    backdrop-filter: blur(200px);
+}
+
+.machineLearning_heder-2 {
+    font-weight: 900;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: #FB916C;
+}
+
+.machineLearning_text-2 {
+    font-weight: normal;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+/*End of About_Machinelearning*/
+/*Icons_box-section*/
+.icons_box {
+    overflow-x: hidden;
+}
+
+.centered_line {
+    width: 140px;
+    transform: rotate(90deg);
+    margin: 80px 0 80px 0;
+    border: 1px dashed #FB916C;
+}
+
+.icons_p {
+    font-weight: 300;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.6);
+}
+/*End of Icons_box-section*/
+/*Quote section*/
+.quote_section {
+    margin: 140px 0;
+}
+
+.quote_relative {
+    position: relative;
+}
+
+.quote_relative > img {
+    position: absolute;
+    top: -70px;
+    left: -10px;
+}
+
+.quote_section-p {
+    padding-left: 80px;
+    font-style: italic;
+    font-weight: 200;
+    font-size: 31px;
+    color: #FFFFFF;
+}
+/*End of Quote section*/
+/*Simple_section*/
+.simple_section_head {
+    font-weight: 100;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.simple_section-theme {
+    font-weight: 900;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: #7CC2DD
+}
+
+.simple_section-p {
+    font-weight: 400;
+    font-size: 24px;
+    padding-right: 30px;
+}
+
+.simple_section-p span {
+    font-weight: 900;
+    font-size: 24px;
+    color: #FB916C;
+}
+
+.qiynavordi {
+    width: auto;
+    height: 550px;
+}
+
+.footer {
+    position: relative;
+    overflow: hidden;
+    height: 210px;
+}
+
+.footer::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 70px;
+    width: 70%;
+    height: 1px;
+    background-color: #FB916C;
+}
+
+.dumaloq {
+    position: absolute;
+    top: 0;
+    right: -100px;
+}
+
+/*End of simple_section*/
+@media (max-width: 767px) {
+    .round {
+        z-index: -1;
+    }
+    
+    .hero_section h1 {
+        font-size: 50px;
+    }
+
+    .hero_section h5 {
+        font-size: 16px;
+    }
+
+    .hero_section h5::after {
+        top: 245px;
+    }
+
+    .qiynavordi {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    .row-reverse-mobile {
+        flex-direction: column-reverse;
+    }
+}
